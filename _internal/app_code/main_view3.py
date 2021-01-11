@@ -176,10 +176,6 @@ class MainWindow(QMainWindow):
             check_count = 0.0
             while True:
                 ret, frame = cap.read()
-                # デバッグ用
-                # frame = cv2.resize(cv2.imread(user_path), (256, 256))
-
-                # frame = cv2.resize(frame, (int(frame.shape[1] / 4), int(frame.shape[0] / 4)))
                 cv2.imshow('Face Match', frame)
 
                 k = cv2.waitKey(10)
